@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de mensajes</title>
+</head>
+<body>
+    <header>
+            <img src="./imagenes/logoa.png" alt="">
+    </header>
+    <main>
+        <form class="seccionFormulario">
+            <textarea class="entrada" name="" placeholder="Ingrese el texto aqui" cols="30" rows="10" ></textarea>
+            <div class="btnContenedor">
+                <div class="mensajeAlerta">
+                    <img src="./imagenes/iconoalerta.png" alt=" icono de alerta">
+                    <span>Solo se permiten letras minúsculas y sin acentos</span>
+                </div>
+            </div>
+            <div class="contenedor">
+                
+                <input class="btnencriptador" type="submit" value="Encriptar">
+                <input class="btndesencriptador" type="submit" value="Desencriptar">
+            </div>
+        </form>
+        <aside class="resultado">
+            <img  class="imgencri" src="./imagenes/encriptar.png" alt="">
+            <div class="loader hidden"></div>
+            <div class="resultadoContenedor">
+                    <h3 class="tituloResultado">Ningun mensaje fue encontrado</h3>
+                    <p class="resultadoTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <button class="btncopiar hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Jhordy Navarro Quiñones</p>
+    </footer>
+    <script src="/encripta.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root{
+    --colorfondo:#EAE0D5;
+    --colorbtn:#22333B;
+    --colortxt:#5E503F;
+    --color:#0A0908;
+
+    --fuente :"Montserrat", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--colorfondo);
+    font-family: var(--fuente);
+}
+main{
+    display: flex;
+    justify-content: space-around;
+
+}
+header{
+    margin-bottom: 3rem;
+}
+header img{
+    width: 120px;
+    height: 60px;
+    border-radius: 15px;
+    
+
+}
+.imgencri{
+    width: 336px;
+    height: 304px;
+    display: block;
+}
+
+.seccionFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70dvh;
+}
+.entrada{
+    width: 100%;
+    max-width: 600px;
+    border-color: transparent;
+    height: 64dvh;
+    outline:none ;
+    background: transparent;
+    border-color: transparent;
+    color: var(--colortxt);
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    overflow: auto;
+}
+
+::placeholder{
+    color: var(--color);
+    font-size: 3.2rem;
+}
+
+.mensajeAlerta{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.contenedor{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.btnencriptador{
+background: var(--colorbtn);
+color: var(--colorfondo);
+font-size: 1.6rem;
+padding: 1rem 2rem;
+width: 328px;
+height: 67px;
+border-radius: 25px;
+border: 1px solid var(--colorbtn);
+font-weight: 600;
+}
+
+.btndesencriptador{
+background: var(--colorfondo);
+color: var(--colorbtn);
+font-size: 1.6rem;
+padding: 1rem 2rem;
+width: 328px;
+height: 67px;
+border-radius: 25px;
+border: 1px solid var(--colorbtn);
+font-weight: 600;
+}
+.btncopiar{
+    background: var(--colorbtn);
+color: var(--colorfondo);
+font-size: 1.6rem;
+padding: 1rem 2rem;
+width: 328px;
+height: 67px;
+border-radius: 25px;
+border: 1px solid var(--colorbtn);
+font-weight: 600;
+}
+.resultado{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 70vdh;
+    border-radius: 32px;
+    max-width: 40rem;
+    width: 100%;
+}
+
+.footer{
+    
+    background-color: var(--colorbtn);
+    color: var(--colorfondo);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+
+}
+
+.hidden{
+    display: none;
+}
+@media screen and (max-width:768px){
+    main{
+        flex-direction: column;
+    }
+    .contenedor{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .resultado{
+        height: auto;
+        max-width: 624px;
+        margin-top: 2rem;
+        min-height: 185px;
+    }
+    .imgencri{
+        display: none;
+    }
+}
+
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    --s: 64px;
+    width: var(--s);
+    aspect-ratio: 2;
+    --_g: #000 90%,#0000;
+    background: 
+      radial-gradient(farthest-side at bottom,var(--_g)) 0    calc(50% - var(--s)/16),
+      radial-gradient(farthest-side at top   ,var(--_g)) 0    calc(50% + var(--s)/16),
+      radial-gradient(farthest-side at bottom,var(--_g)) 50%  calc(50% - var(--s)/16),
+      radial-gradient(farthest-side at top   ,var(--_g)) 50%  calc(50% + var(--s)/16),
+      radial-gradient(farthest-side at bottom,var(--_g)) 100% calc(50% - var(--s)/16),
+      radial-gradient(farthest-side at top   ,var(--_g)) 100% calc(50% + var(--s)/16);
+    background-size: 25% 25%;
+    background-repeat: no-repeat;
+    animation: l13 1s infinite linear;
+  }
+  @keyframes l13 {
+      16.67% {background-position:0 0,0 100%,50% calc(50% - var(--s)/8),50% calc(50% + var(--s)/16),100% calc(50% - var(--s)/16),100% calc(50% + var(--s)/16)}
+      33.33% {background-position:0 0,0 100%,50% 0,50% 100%,100% calc(50% - var(--s)/16),100% calc(50% + var(--s)/16)}
+      50%    {background-position:0 0,0 100%,50% 0,50% 100%,100% 0,100% 100%}
+      66.67% {background-position:0 calc(50% - var(--s)/16),0 calc(50% + var(--s)/16),50% 0,50% 100%,100% 0,100% 100%}
+      83.33% {background-position:0 calc(50% - var(--s)/16),0 calc(50% + var(--s)/16),50% calc(50% - var(--s)/16),50% calc(50% + var(--s)/16),100% 0,100% 100%}
+  }
